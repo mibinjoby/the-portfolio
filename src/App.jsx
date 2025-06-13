@@ -1,13 +1,15 @@
 import React from 'react'
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar.jsx'
+import Hero from './components/Hero.jsx'
 
 
 function App() {
   return (
     <>
     <Navbar />
-    <div className='text-red-500'>
-      Home
+    <Hero />
+    <div >
+      
     </div>
     </>
     

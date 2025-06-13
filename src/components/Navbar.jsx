@@ -49,11 +49,12 @@ const Navbar =() => {
 
         <ul className='hidden md:flex gap-12 z-10 cursor-pointer text-white'>
 
-          <li>
-           <Link to="about" smooth={true} offset="{50}" duration="{500}">About</Link>
-           <Link to="contacts" smooth={true}  offset="{50}" duration="{500}">Contacts</Link>
-           <Link to="projects"smooth={true} offset="{50}" duration="{500}">Projects</Link>
-          </li>
+          <li> <Link to="about" smooth={true} offset="{50}" duration="{500}">About</Link></li>
+          
+          <li> <Link to="contacts" smooth={true}  offset="{50}" duration="{500}">Contacts</Link> </li>
+
+          <li> <Link to="projects"smooth={true} offset="{50}" duration="{500}">Projects</Link> </li>
+          
         </ul>
 
         <div onClick={toggleNav} className=' md:hidden z-60 text-gray-700'>
