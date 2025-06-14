@@ -1,7 +1,7 @@
 import { iframe } from 'framer-motion/client'
 import React from 'react'
 
-const shinyeffect = ({left, right, top,size = 500}) => {
+const shinyEffect = ({left, right, top,size = 500}) => {
 
     const positionStyles = {
         top:`${top}px`,
@@ -22,13 +22,13 @@ const shinyeffect = ({left, right, top,size = 500}) => {
 
 
   return (
-    <div className='shiny-effect' style={positionStyles}>
-      shinyeffect
+    <div className='shinyEffect' style={positionStyles}>
+      shinyEffect
     </div>
   )
 }
 
-export default shinyeffect
+export default shinyEffect
 
 
 

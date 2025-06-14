@@ -1,8 +1,12 @@
+
+
 import React from 'react'
 import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 import { AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineX } from 'react-icons/ai'
 import { DiCss3, DiHtml5, DiJavascript, DiNodejsSmall, DiReact } from 'react-icons/di'
+import shinyEffect from './ShinyEffect.jsx'
+import mibin from '../assets/mibin.jpg'
 
 
 
@@ -76,26 +80,19 @@ const Hero = () => {
               </motion.a>
 
               <motion.a whileHover={{ scale: 1.2}} href="#">
-                <AiOutlineX/>
-
-              </motion.a>
-
-              <motion.a whileHover={{ scale: 1.2}} href="#">
                 <AiOutlineLinkedin/>
 
               </motion.a>
 
-              <motion.a whileHover={{ scale: 1.2}} href="#">
-                <AiOutlineInstagram/>
 
-              </motion.a>
+              
 
             </div>
 
           </motion.div>
         </motion.div>
 
-        <motion.img src={profilepic} className='w-[300px] md:w-[450px]'
+        <motion.img src={mibin} className='w-[300px] md:w-[450px]'
           initial={{opacity: 0 ,scale:0.8}}
            whileInView={{opacity: 1,scale:1}}
            viewport={{once: true}}
@@ -118,7 +115,7 @@ const Hero = () => {
       </motion.div>
 
       <div className=' absolute inset-0 hidden md:block'>
-        <shiny-effect left={0} top={0} size={1400}/>
+        <shinyEffect left={0} top={0} size={1400}/>
       </div>
     </div>
   )
