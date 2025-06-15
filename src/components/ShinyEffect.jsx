@@ -1,7 +1,7 @@
 import { iframe } from 'framer-motion/client'
 import React from 'react'
 
-const shinyEffect = ({left, right, top,size = 500}) => {
+const shinyEffect = ({left, right, top, size = 500 }) => {
 
     const positionStyles = {
         top:`${top}px`,
