@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 import { AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineX } from 'react-icons/ai'
 import { DiCss3, DiHtml5, DiJavascript, DiNodejsSmall, DiReact } from 'react-icons/di'
-import shinyEffect from './ShinyEffect.jsx'
+import ShinyEffect from './ShinyEffect.jsx'
 import mibin from '../assets/mibin.jpg'
 
 
@@ -30,8 +30,7 @@ const Hero = () => {
              1000,
              "Webdesigner",
              1000,
-             "Consultant",
-             1000
+             
                ]}
            speed={50}
            repeat={Infinity}
@@ -45,7 +44,7 @@ const Hero = () => {
 
            Hey,I AM <br />
 
-           <span className='text-purple-500'>MIBIN JOBY</span>
+           <span className='text-purple-500 font-space Grotesk'>MIBIN JOBY</span>
 
           </motion.p>
 
@@ -105,17 +104,36 @@ const Hero = () => {
            viewport={{once: true}}
            transition={{duration: 1, delay: 2}} className='flex flex-row text-7xl px-12 md:px-0 w-full justify-center iteme-center py-24'>
 
-            <p className='text-gray-200 mr-6'>skills</p>
-           < DiHtml5 className='text-orange-600 mx-2'/>
-           < DiCss3 className='text-blue-600 mx-2'/>
-           < DiJavascript className='text-yellow-600 mx-2'/>
-           < DiReact className='text-blue-600 mx-2'/>
-           < DiNodejsSmall className='text-blue-600 mx-2'/>
+            <p className='text-gray-200 mr-6'>My Tech stack</p>
+
+           <motion.button whileHover={{ scale: 1.25, boxShadow: "0px, 0px,0px rgba(0,0,0,0.3)"}} className='z-10 cursor-pointer '>
+
+            < DiHtml5 className='text-orange-600 mx-2'/>
+            
+
+           </motion.button>
+           <motion.button whileHover={{ scale: 1.25, boxShadow: "0px, 0px,0px rgba(0,0,0,0.3)"}} className='z-10 cursor-pointer '>
+            < DiCss3 className='text-blue-600 mx-2'/>
+           </motion.button>
+
+           <motion.button whileHover={{ scale: 1.25, boxShadow: "0px, 0px,0px rgba(0,0,0,0.3)"}} className='z-10 cursor-pointer '>
+            < DiJavascript className='text-yellow-600 mx-2'/>
+           </motion.button>
+
+           <motion.button whileHover={{ scale: 1.25, boxShadow: "0px, 0px,0px rgba(0,0,0,0.3)"}} className='z-10 cursor-pointer '>
+            < DiReact className='text-blue-600 mx-2'/>
+           </motion.button>
+           
+            <motion.button whileHover={{ scale: 1.25, boxShadow: "0px, 0px,0px rgba(0,0,0,0.3)"}} className='z-10 cursor-pointer '>
+              < DiNodejsSmall className='text-blue-600 mx-2'/>
+            </motion.button>
+           
+           
 
       </motion.div>
 
       <div className=' absolute inset-0 hidden md:block'>
-        <shinyEffect left={0} top={0} size={1400}/>
+        <ShinyEffect left={0} top={0} size={1400}/>
       </div>
     </div>
   )

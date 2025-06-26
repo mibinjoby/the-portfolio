@@ -49,11 +49,11 @@ const Navbar =() => {
 
         <ul className='hidden md:flex gap-12 z-10 cursor-pointer text-white'>
 
-          <li> <Link to="about" smooth={true} offset="{50}" duration="{500}" className=''>About</Link></li>
+          <li> <Link to="about" smooth={true} offset="{50}" duration="{500}" className=" hover:text-purple-600 transition-colors">About</Link></li>
           
-          <li> <Link to="contacts" smooth={true}  offset="{50}" duration="{500}">Contacts</Link> </li>
+          <li> <Link to="contacts" smooth={true}  offset="{50}" duration="{500}" className=" hover:text-purple-600 transition-colors">Contacts</Link> </li>
 
-          <li> <Link to="projects"smooth={true} offset="{50}" duration="{500}">Projects</Link> </li>
+          <li> <Link to="projects"smooth={true} offset="{50}" duration="{500}" className=" hover:text-purple-600 transition-colors">Projects</Link> </li>
           
         </ul>
 

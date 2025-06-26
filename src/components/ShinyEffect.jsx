@@ -23,7 +23,7 @@ const shinyEffect = ({left, right, top, size = 500 }) => {
 
   return (
     <div className='shinyEffect' style={positionStyles}>
-      shinyEffect
+      
     </div>
   )
 }

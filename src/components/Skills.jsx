@@ -4,6 +4,7 @@ import { DiBootstrap, DiCss3, DiGithub, DiHtml5, DiJavascript, DiMongodb, DiNode
 
 const skills = [
     {
+        
         category:"Frontend",
         technologies: [
             {name: 'Html', icon: <DiHtml5 className='text-orange-600'/>},
@@ -12,6 +13,8 @@ const skills = [
             {name: 'Javascript', icon: <DiJavascript className='text-yellow-600'/>},
             {name: 'React', icon: <DiReact className='text-blue-600'/>},
         ]
+    
+       
     },
         {
         category:"Fullstack",

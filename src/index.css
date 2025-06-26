@@ -1,7 +1,14 @@
+@font-face {
+    font-family:space Grotesk ;
+    src: url(../src/assets/fonts/SpaceGrotesk-Regular.ttf);
+}
 @import "tailwindcss";
 
+
+
+
 body{
-    font-family: "space Grotesk" sans-serif;
+  --font-display: "Space Grotesk", "sans-serif";
     background-color: #190b1f;
 }
 
@@ -23,4 +30,9 @@ span{
     pointer-events: none;
     z-index: 1;
     background: radial-gradient(circle, rgba(178,19,202,0.), transparent);
+}
+
+.bg-primary-color {
+    @apply bg-purple-600
+
 }
