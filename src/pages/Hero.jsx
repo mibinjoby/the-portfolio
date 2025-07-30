@@ -3,9 +3,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
-import { AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineX } from 'react-icons/ai'
-import { DiCss3, DiHtml5, DiJavascript, DiNodejsSmall, DiReact } from 'react-icons/di'
-import ShinyEffect from './ShinyEffect.jsx'
+import { AiOutlineGithub, AiOutlineLinkedin,  } from 'react-icons/ai'
+import { DiCss3, DiHtml5, DiJavascript, DiMongodb, DiNodejs, DiNodejsSmall, DiReact } from 'react-icons/di'
+import ShinyEffect from '../components/ShinyEffect.jsx'
+
 import mibin from '../assets/mibin.jpg'
 
 
@@ -26,7 +27,7 @@ const Hero = () => {
 
            <TypeAnimation
             sequence={[
-             "Fullstack Dev",
+             "Mern Developer",
              1000,
              "Webdesigner",
              1000,
@@ -40,11 +41,11 @@ const Hero = () => {
             initial={{opacity: 0}}
             whileInView={{opacity: 1}}
             viewport={{once: true}}
-            transition={{duration: 1, delay: 0.5}} className='text-gray-200 md:text-7xl text-5xl tracking-tight mb-4'>
+            transition={{duration: 1, delay: 0.5}} className='text-gray-200 md:text-7xl text-7xl tracking-tight mb-4'>
 
            Hey,I AM <br />
 
-           <span className='text-purple-500 font-space Grotesk'>MIBIN JOBY</span>
+           <span className='text-purple-600 font-space Grotesk'>MIBIN JOBY</span>
 
           </motion.p>
 
@@ -65,7 +66,7 @@ const Hero = () => {
            transition={{duration: 1, delay: 1.5}} className='flex flex-row items-center gap-6 my-4 md:md-0'>
 
             <motion.button whileHover={{ scale: 1.05, boxShadow: "0px, 0px,0px rgba(0,0,0,0.3)"}} className='z-10 cursorr-pointer font-bold 
-             text-gray-200 md:w-auto p-4 border  border-purple-400 rounded-xl'>
+             text-gray-3 00 md:w-auto p-4 border bg-purple-900 border-purple-900 rounded-xl'>
 
               Download cv
 
@@ -127,8 +128,14 @@ const Hero = () => {
             <motion.button whileHover={{ scale: 1.25, boxShadow: "0px, 0px,0px rgba(0,0,0,0.3)"}} className='z-10 cursor-pointer '>
               < DiNodejsSmall className='text-blue-600 mx-2'/>
             </motion.button>
-           
-           
+
+             <motion.button whileHover={{ scale: 1.25, boxShadow: "0px, 0px,0px rgba(0,0,0,0.3)"}} className='z-10 cursor-pointer '>
+              < DiMongodb className='text-green-500 mx-2'/>
+            </motion.button>
+
+            <motion.button whileHover={{ scale: 1.25, boxShadow: "0px, 0px,0px rgba(0,0,0,0.3)"}} className='z-10 cursor-pointer '>
+              < DiNodejs className='text-green-500 mx-2'/>
+            </motion.button>
 
       </motion.div>
 

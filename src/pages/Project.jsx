@@ -17,7 +17,7 @@ const projects = [
 
 const Project = () => {
   return (
-    <div className='max-w[1000px] mx-auto p-6 md:my-20' id='project'>
+    <div className='max-w[1000px] mx-auto p-6 md:my-20' id='projects'>
 
         <h2 className='text-3xl font-bold text-gray-200 mb-8'>Projects</h2>
 
@@ -27,7 +27,7 @@ const Project = () => {
                 <div className='w-full md:w-1/2 p-4 '>
 
                     <img
-                        src={project1.img}
+                        src={project.img}
                         alt={project.title}
                         className='w-full h-full object-cover rounded-lg shadow-lg'
                     />

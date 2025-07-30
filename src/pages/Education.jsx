@@ -2,6 +2,10 @@ import React from 'react'
 import {motion} from 'framer-motion'
 
 const education = [
+    
+      
+   
+
     {
         course:'BCA',
         institute:'Elims college',
@@ -21,7 +25,9 @@ const education = [
 
 const Education = () => {
   return (
-    <div className='p-8'>
+      
+   
+    <div id='education' className='p-8'>
 
         <h1 className='text-4xl text-gray-200 font-bold text-center mb-12'>Education</h1>
         <motion.div className='space-y-8'
@@ -36,7 +42,7 @@ const Education = () => {
              viewport={{once: false ,amount:0.3}}
              transition={{duration: 1 }}
              className='max-w-[600px] mx-auto border border-purple-600 p-6 rounded-lg shadow-md hover:shadow-xl 
-             transrition-shadow duration-300 bg-purple-700/10 '
+             transition-shadow duration-300 bg-purple-700/10 '
             >
                 <h2 className='text-gray-100 text-2xl font-semibold '>{education.course}</h2>
                 <p className='text-gray-300'>{education.institute}</p>
@@ -46,9 +52,12 @@ const Education = () => {
         ))}
 
         </motion.div>
+    
       
     </div>
   )
 }
+ 
+
 
 export default Education
